@@ -9,7 +9,8 @@
    > Создать директорию, переместить файл туда.
    > ![Скрин 2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task2.png)
 
-
+## Задание 3
+   > Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
 
 
 
