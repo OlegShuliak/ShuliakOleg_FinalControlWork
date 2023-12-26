@@ -11,6 +11,7 @@
 
 ## Задание 3
    > Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
+   > ![Скрин 3](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task3.png)
 
 
 
