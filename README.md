@@ -13,5 +13,6 @@
    > Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
    > ![Скрин 3](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task3.png)
 
-
-
+## Задание 4
+   > Установить и удалить deb-пакет с помощью dpkg.
+   > ![Скрин 4](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task4.png)
