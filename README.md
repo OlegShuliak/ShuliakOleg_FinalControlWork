@@ -16,3 +16,9 @@
 ## Задание 4
    > Установить и удалить deb-пакет с помощью dpkg.
    > ![Скрин 4](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task4.png)
+
+## Задание 5 
+ > Выложить историю команд в терминале Ubuntu.
+ > ![История команд Ubuntu](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HistoryUbuntu.md)
+
+
