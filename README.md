@@ -21,4 +21,6 @@
 > Выложить историю команд в терминале Ubuntu.
 > [История команд Ubuntu](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HistoryUbuntu.md)
 
-
+## Задание 6
+   > Нарисовать диаграмму, в которой есть родительский класс, домашние животные и вьючные животные, в составы которых в случае домашних животных войдут классы: собаки, кошки, хомяки, а класс вьючные животные войдут: лошади, верблюды и ослы.
+   > [Диаграмма](https://app.diagrams.net/?libs=general;uml#G13NNZ9r5TgsWndU_mt_ru2zwfHt-ol6I4)
