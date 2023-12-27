@@ -29,8 +29,10 @@
    > В подключенном MySQL репозитории создать базу данных ["Друзья человека"](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql).
    > ![Скрин 7](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task7.png)
    
-
-
+## Задание 8
+   > Создать [таблицы](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) с иерархией из диаграммы БД.
+   > ![Скрин 8.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task8.1.png)
+   > ![Скрин 8.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task8.2.png)
 
 
 
