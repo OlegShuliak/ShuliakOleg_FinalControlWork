@@ -39,9 +39,12 @@
    > ![Скрин 9.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task9.1.png)
    > ![Скрин 9.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task9.2.png) 
 
-
-
-
+## Задание 10
+   > Удалить из [таблицы](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) верблюдов, т.к. верблюдов решили перевезти в другой питомник на зимовку. Объединить таблицы лошади и ослы в одну таблицу.
+   > Удаляем верблюдов:
+   > ![Скрин 10.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task10.1.png) ![Скрин 10.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task10.2.png)
+   > Объединяем таблицы лошадей и ослов:
+   > ![Скрин 10.3](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task10.3.png)
 
 
 
