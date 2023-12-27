@@ -34,6 +34,13 @@
    > ![Скрин 8.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task8.1.png)
    > ![Скрин 8.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task8.2.png)
 
+## Задание 9
+   > Заполнить [низкоуровневые таблицы](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) именами (животных), командами которые они выполняют и датами рождения.
+   > ![Скрин 9.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task9.1.png)
+   > ![Скрин 9.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task9.2.png) 
+
+
+
 
 
 
