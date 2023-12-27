@@ -114,12 +114,35 @@ VALUES
 (2, 3, 'Миша', 'Шагом', '2019-7-29'),
 (2, 3, 'Артур', 'Рысь', '2018-03-05');
   
-  
+-- Задание 10
+SELECT * FROM camel;
+TRUNCATE TABLE camel; -- удаляем верблюдов
+SELECT * FROM camel;
+
+SELECT * FROM horse
+UNION SELECT * FROM donkey; -- объединяем таблицы лошадей и ослов
     
     
     
     
     
-    
-    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
     
