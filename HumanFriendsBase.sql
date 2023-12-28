@@ -124,12 +124,28 @@ SELECT * FROM camel;
 SELECT * FROM horse
 UNION SELECT * FROM donkey; -- объединяем таблицы лошадей и ослов
     
+-- Задание 11
+DROP TABLE IF EXISTS all_animals;
+CREATE TEMPORARY TABLE all_animals AS
+SELECT * FROM (SELECT pet.kind_of_animal, animal_name, date_of_birth, TIMESTAMPDIFF(MONTH, date_of_birth, CURDATE()) AS age 
+FROM hamster LEFT JOIN pet ON hamster.kind_of_animal_id = pet.id) AS ham
+UNION SELECT * FROM (SELECT pet.kind_of_animal, animal_name, date_of_birth, TIMESTAMPDIFF(MONTH, date_of_birth, CURDATE()) AS age 
+FROM dog LEFT JOIN pet ON dog.kind_of_animal_id = pet.id) AS dg
+UNION SELECT * FROM (SELECT pet.kind_of_animal, animal_name, date_of_birth, TIMESTAMPDIFF(MONTH, date_of_birth, CURDATE()) AS age 
+FROM cat LEFT JOIN pet ON cat.kind_of_animal_id = pet.id) AS ct
+UNION SELECT * FROM (SELECT pack_animal.kind_of_animal, animal_name, date_of_birth, TIMESTAMPDIFF(MONTH, date_of_birth, CURDATE()) AS age 
+FROM horse LEFT JOIN pack_animal ON horse.kind_of_animal_id = pack_animal.id) AS hor
+UNION SELECT * FROM (SELECT pack_animal.kind_of_animal, animal_name, date_of_birth, TIMESTAMPDIFF(MONTH, date_of_birth, CURDATE()) AS age 
+FROM donkey LEFT JOIN pack_animal ON donkey.kind_of_animal_id = pack_animal.id) AS don;
 
+SELECT * FROM all_animals;
 
-	
-
+DROP TABLE IF EXISTS young_animals;
+CREATE TEMPORARY TABLE young_animals AS
+SELECT * FROM all_animals
+WHERE date_of_birth BETWEEN SUBDATE(curdate(), INTERVAL 1095 DAY) AND SUBDATE(CURDATE(), INTERVAL 365 DAY);
     
- 
+SELECT * FROM young_animals;
  
  
  

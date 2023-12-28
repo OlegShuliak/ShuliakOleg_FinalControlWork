@@ -48,8 +48,8 @@
 
 ## Задание 11
    > Создать новую [таблицу](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) "Молодые животные" в которую  попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице.
-
-
+   > ![Скрин 11.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task11.1.png)
+   > ![Скрин 11.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task11.2.png)
 
 
 
