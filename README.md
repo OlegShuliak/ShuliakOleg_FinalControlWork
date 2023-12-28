@@ -46,6 +46,12 @@
    > Объединяем таблицы лошадей и ослов:
    > ![Скрин 10.3](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task10.3.png)
 
+## Задание 11
+   > Создать новую [таблицу](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) "Молодые животные" в которую  попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице.
+
+
+
+
 
 
 

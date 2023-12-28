@@ -75,14 +75,14 @@ VALUES
    INSERT INTO pet (type_of_animal_id, type_of_pet)
 VALUES
 (1, 'Хомяк'),
-(2, 'Собака'), 
-(3, 'Кот');
+(1, 'Собака'), 
+(1, 'Кот');
   
   INSERT INTO pack_animal (type_of_animal_id, type_of_pack_animal)
 VALUES
-(1, 'Лошадь'),
+(2, 'Лошадь'),
 (2, 'Осел'), 
-(3, 'Верблюд');
+(2, 'Верблюд');
   
    INSERT INTO hamster (type_of_animal_id, type_of_pet_id, pet_name, skill, date_of_birth)
 VALUES
@@ -113,7 +113,7 @@ VALUES
 VALUES
 (2, 3, 'Миша', 'Шагом', '2019-7-29'),
 (2, 3, 'Артур', 'Рысь', '2018-03-05');
-  
+    
 -- Задание 10
 SELECT * FROM camel;
 TRUNCATE TABLE camel; -- удаляем верблюдов
