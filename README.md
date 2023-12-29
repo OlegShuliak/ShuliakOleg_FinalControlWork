@@ -51,8 +51,9 @@
    > ![Скрин 11.1](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task11.1.png)
    > ![Скрин 11.2](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task11.2.png)
 
-
-
+## Задание 12
+   > Объединить все [таблицы](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) в одну, при этом сохраняя поля, указывающие на принадлежность к старым таблицам.
+   > ![Скрин 12](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task12.png)
 
 
 

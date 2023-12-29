@@ -141,18 +141,32 @@ FROM donkey LEFT JOIN pack_animal ON donkey.kind_of_animal_id = pack_animal.id) 
 SELECT * FROM all_animals;
 
 DROP TABLE IF EXISTS young_animals;
-CREATE TEMPORARY TABLE young_animals AS
+CREATE TABLE young_animals AS
 SELECT * FROM all_animals
 WHERE date_of_birth BETWEEN SUBDATE(curdate(), INTERVAL 1095 DAY) AND SUBDATE(CURDATE(), INTERVAL 365 DAY);
     
 SELECT * FROM young_animals;
  
- 
- 
- 
- 
- 
- 
+ -- Задание 12
+ SELECT pet.kind_of_animal, young_animals.animal_name, hamster.skill, young_animals.date_of_birth FROM hamster
+ LEFT JOIN pet ON hamster.kind_of_animal_id = pet.id
+ LEFT JOIN young_animals ON hamster.animal_name = young_animals.animal_name
+ UNION ALL
+ SELECT pet.kind_of_animal, young_animals.animal_name, dog.skill, young_animals.date_of_birth FROM dog
+ LEFT JOIN pet ON dog.kind_of_animal_id = pet.id
+ LEFT JOIN young_animals ON dog.animal_name = young_animals.animal_name
+ UNION ALL
+ SELECT pet.kind_of_animal, young_animals.animal_name, cat.skill, young_animals.date_of_birth FROM cat
+ LEFT JOIN pet ON cat.kind_of_animal_id = pet.id
+ LEFT JOIN young_animals ON cat.animal_name = young_animals.animal_name
+ UNION ALL
+ SELECT pack_animal.kind_of_animal, young_animals.animal_name, horse.skill, young_animals.date_of_birth FROM horse
+ LEFT JOIN pack_animal ON horse.kind_of_animal_id = pack_animal.id
+ LEFT JOIN young_animals ON horse.animal_name = young_animals.animal_name
+ UNION ALL
+ SELECT pack_animal.kind_of_animal, young_animals.animal_name, donkey.skill, young_animals.date_of_birth FROM donkey
+ LEFT JOIN pack_animal ON donkey.kind_of_animal_id = pack_animal.id
+ LEFT JOIN young_animals ON donkey.animal_name = young_animals.animal_name;
  
  
  
