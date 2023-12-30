@@ -55,9 +55,8 @@
    > Объединить все [таблицы](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/HumanFriendsBase.sql) в одну, при этом сохраняя поля, указывающие на принадлежность к старым таблицам.
    > ![Скрин 12](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/ScreenShots/Task12.png)
 
-
-
-
-
+## Задание 13
+   > Создать [класс с инкапсуляцией и наследованием](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/model) по [диаграмме](https://app.diagrams.net/?libs=general;uml#G13NNZ9r5TgsWndU_mt_ru2zwfHt-ol6I4).
+   
 
 
