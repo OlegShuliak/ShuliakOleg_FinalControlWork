@@ -20,8 +20,6 @@ public class Cat extends HumanFriend {
 
     @Override
     public String toString() {
-        return "Cat{" +
-                "type=" + type +
-                '}';
+        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Домашнее животное", "Кот", getName(), getSkill(), getDateOfBirth());
     }
 }

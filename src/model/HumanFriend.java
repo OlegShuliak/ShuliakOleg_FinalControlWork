@@ -1,5 +1,7 @@
 package model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class HumanFriend {
@@ -37,11 +39,5 @@ public abstract class HumanFriend {
         this.dateOfBirth = dateOfBirth;
     }
 
-    @Override
-    public String toString() {
-        return "name='" + name + '\'' +
-                ", skill='" + skill + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                '}';
-    }
+
 }

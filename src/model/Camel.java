@@ -20,8 +20,6 @@ public class Camel extends HumanFriend {
 
     @Override
     public String toString() {
-        return "Camel{" +
-                "type=" + type +
-                '}';
+        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Вьючное животное", "Верблюд", getName(), getSkill(), getDateOfBirth());
     }
 }

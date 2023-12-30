@@ -21,8 +21,6 @@ public class Hamster extends HumanFriend {
 
     @Override
     public String toString() {
-        return "Hamster{" +
-                "type=" + type +
-                '}';
+        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Домашнее животное", "Хомяк", getName(), getSkill(), getDateOfBirth());
     }
 }

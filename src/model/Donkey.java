@@ -20,8 +20,6 @@ public class Donkey extends HumanFriend {
 
     @Override
     public String toString() {
-        return "Donkey{" +
-                "type=" + type +
-                '}';
+        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Вьючное животное", "Осел", getName(), getSkill(), getDateOfBirth());
     }
 }
