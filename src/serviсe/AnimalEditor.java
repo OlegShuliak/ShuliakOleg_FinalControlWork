@@ -11,24 +11,23 @@ import java.util.Scanner;
 public class AnimalEditor {
 
     private Scanner scanner = new Scanner(System.in);
-    public ArrayList AnimalInfArr(int id, HumanFriend humanFriend) {
+    public ArrayList AnimalInfArr(HumanFriend humanFriend) {
         ArrayList animalInf = new ArrayList();
-        animalInf.set(0, id);
-        animalInf.set(1, humanFriend.getType());
-        animalInf.set(2, humanFriend.getKind());
-        animalInf.set(3, humanFriend.getName());
-        animalInf.set(4, humanFriend.getSkill());
-        animalInf.set(5, humanFriend.getDateOfBirth());
+        animalInf.set(0, humanFriend.getType());
+        animalInf.set(1, humanFriend.getKind());
+        animalInf.set(2, humanFriend.getName());
+        animalInf.set(3, humanFriend.getSkill());
+        animalInf.set(4, humanFriend.getDateOfBirth());
         return animalInf;
     }
 
     public HumanFriend AnimalFromArr (ArrayList animalInfArr){
-        HumanFriend animal = new AnimalConstructor().createNewAnimal((AnimalKind) animalInfArr.get(2), (String) animalInfArr.get(3), (String) animalInfArr.get(4), (Date) animalInfArr.get(5));
+        HumanFriend animal = new AnimalConstructor().createNewAnimal((AnimalKind) animalInfArr.get(1), (String) animalInfArr.get(2), (String) animalInfArr.get(3), (Date) animalInfArr.get(4));
         return animal;
     }
 
     public ArrayList AnimalTrain (ArrayList animalInfArr){
-        String animalSkill = (String) animalInfArr.get(4);
+        String animalSkill = (String) animalInfArr.get(3);
         StringBuilder sb = new StringBuilder(animalSkill);
         do {
             System.out.println("Введите новую команду для животного: ");
@@ -43,6 +42,6 @@ public class AnimalEditor {
     }
 
     public void viewSkill (ArrayList animalInfArr){
-        System.out.printf("Команды животного: %S. \n", animalInfArr.get(4));
+        System.out.printf("Команды животного: %S. \n", animalInfArr.get(3));
     }
 }
