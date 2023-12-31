@@ -6,7 +6,6 @@ import constructor.PackAnimalKind;
 import constructor.PetKind;
 import model.HumanFriend;
 
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;

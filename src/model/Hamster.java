@@ -1,22 +1,15 @@
 package model;
 
+import constructor.PetKind;
+
 import java.util.Date;
 
 public class Hamster extends HumanFriend {
 
-    private Type type;
-
-    public Hamster(String name, String skill, Date dateOfBirth, Type type) {
+    public Hamster(String name, String skill, Date dateOfBirth) {
         super(name, skill, dateOfBirth);
-        this.type = type;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
+        super.type = Type.PET;
+        super.kind = PetKind.HUMSTER;
     }
 
     @Override
