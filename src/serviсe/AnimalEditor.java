@@ -41,4 +41,8 @@ public class AnimalEditor {
         animalInfArr.set(4, sb.toString());
         return animalInfArr;
     }
+
+    public void viewSkill (ArrayList animalInfArr){
+        System.out.printf("Команды животного: %S. \n", animalInfArr.get(4));
+    }
 }
