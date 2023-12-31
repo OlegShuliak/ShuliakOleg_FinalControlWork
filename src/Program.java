@@ -1,5 +1,5 @@
 
-import servise.AddAnimal;
+import serviсe.AddAnimal;
 
 import java.util.Scanner;
 

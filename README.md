@@ -61,8 +61,8 @@
 ## Задание 14
    > Написать [программу](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/Program.java), имитирующую работу реестра домашних животных.
    > В программе должен быть реализован следующий функционал:
-   > 1. Завести новое животное
-   > 2. Определять животное в правильный класс
+   > 1. [Завести новое животное](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/serviсe/AddAnimal.java)
+   > 2. [Определять животное в правильный класс](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/constructor/AnimalConstructor.java)
    > 3. Увидеть список команд, которое выполняет животное
    > 4. Обучить животное новым командам
    > 5. Реализовать навигацию по меню
