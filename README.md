@@ -58,5 +58,14 @@
 ## Задание 13
    > Создать [класс с инкапсуляцией и наследованием](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/model) по [диаграмме](https://app.diagrams.net/?libs=general;uml#G13NNZ9r5TgsWndU_mt_ru2zwfHt-ol6I4).
    
+## Задание 14
+   > Написать [программу](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/Program.java), имитирующую работу реестра домашних животных.
+   > В программе должен быть реализован следующий функционал:
+   > 1. Завести новое животное
+   > 2. Определять животное в правильный класс
+   > 3. Увидеть список команд, которое выполняет животное
+   > 4. Обучить животное новым командам
+   > 5. Реализовать навигацию по меню
+
 
 
