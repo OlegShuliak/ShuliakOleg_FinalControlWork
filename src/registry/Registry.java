@@ -1,5 +1,6 @@
 package registry;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class Registry {
         this.animalHashMap = animalHashMap;
     }
 
-    public HashMap getAnimalHashMap() {
+    public HashMap <Integer, ArrayList> getAnimalHashMap() {
         return animalHashMap;
     }
 
