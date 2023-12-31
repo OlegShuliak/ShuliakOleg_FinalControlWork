@@ -1,28 +1,31 @@
 package registry;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class Registry {
 
-    private List animalList;
+    private HashMap animalHashMap;
 
     public Registry() {
     }
 
-    public Registry(List animalList) {
-        this.animalList = animalList;
+    public Registry(HashMap animalHashMap) {
+        this.animalHashMap = animalHashMap;
     }
 
-    public List getAnimalList() {
-        return animalList;
+    public HashMap getAnimalHashMap() {
+        return animalHashMap;
     }
 
-    public void setAnimalList(List animalList) {
-        this.animalList = animalList;
+    public void setAnimalHashMap(HashMap animalHashMap) {
+        this.animalHashMap = animalHashMap;
     }
 
     @Override
     public String toString() {
-        return animalList.toString();
+        return "Registry{" +
+                "animalHashMap=" + animalHashMap +
+                '}';
     }
 }
