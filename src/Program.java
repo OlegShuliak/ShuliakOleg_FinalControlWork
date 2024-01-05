@@ -6,6 +6,7 @@ import serviсe.AddAnimal;
 import serviсe.AnimalEditor;
 import serviсe.RegEditor;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -15,11 +16,13 @@ public class Program {
 
     public static void main(String[] args) {
         boolean f = true;
-
-        Registry packAnimalBase = new Registry(new HashMap<>());
-        Registry petBase = new Registry(new HashMap<>());
         RegEditor regEditor = new RegEditor();
         AnimalEditor animalEditor = new AnimalEditor();
+
+        Registry petBase = regEditor.loadReg(Type.PET);
+        Registry packAnimalBase = regEditor.loadReg(Type.PACKANIMAL);
+//        Registry packAnimalBase = new Registry(new HashMap<>());
+//        Registry petBase = new Registry(new HashMap<>());
 
         while (f) {
             System.out.println("Введите номер операции для работы со справочником:");
@@ -70,12 +73,17 @@ public class Program {
                             animalEditor.viewSkill(regEditor.setAnimal(petBase));
                         }
                     }
-                    case 0 -> f = false;
+                    case 0 -> {
+                        regEditor.saveReg(petBase, Type.PET);
+                        regEditor.saveReg(packAnimalBase, Type.PACKANIMAL);
+                        f = false;
+                    }
                     default -> System.out.println("Такой операции не существует. Повторите попытку ввода.");
                 }
             } catch (NumberFormatException exception) {
                 System.out.println("Неверный формат ввода, повторите попытку.");
             }
+
         }
     }
 }

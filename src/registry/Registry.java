@@ -1,5 +1,8 @@
 package registry;
 
+import netscape.javascript.JSException;
+import netscape.javascript.JSObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,7 +25,6 @@ public class Registry {
     public void setAnimalHashMap(HashMap animalHashMap) {
         this.animalHashMap = animalHashMap;
     }
-
 
     @Override
     public String toString() {

@@ -2,11 +2,11 @@ package serviсe;
 
 import model.HumanFriend;
 import model.Type;
+import netscape.javascript.JSObject;
 import registry.Registry;
 
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 
 public class RegEditor {
@@ -101,5 +101,37 @@ public class RegEditor {
 
         }
         return null;
+    }
+
+    public void saveReg(Registry regAnimal, Type type) {
+        try (FileWriter writer = new FileWriter("src/registry/" + type + ".txt", false)) {
+            for (var animal : regAnimal.getAnimalHashMap().entrySet()) {
+                writer.write(String.format("%s, %s\n", animal.getKey(), animal.getValue()).replace("[", "").replace("]", ""));
+            }
+            writer.flush();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    public Registry loadReg(Type type) {
+        Registry regAnimal = new Registry(new HashMap<>());
+        LoadAnimal loadAnimal = new LoadAnimal();
+        AnimalEditor animalEditor = new AnimalEditor();
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("src/registry/" + type + ".txt"));
+            String str;
+            while ((str = br.readLine()) != null) {
+                ArrayList<String> list = new ArrayList<>(List.of(str.split(",")));
+                System.out.println(list);
+                regAnimal.getAnimalHashMap().put(Integer.parseInt(list.get(0)), animalEditor.animalInfArr(loadAnimal.strToAnimal(list.get(2).trim(), list.get(3).trim(), list.get(4).trim(), list.get(5).trim())));
+            }
+            br.close();
+        } catch (FileNotFoundException exFile) {
+            System.out.println("Отсутствует файл реестра.");
+        } catch (IOException exIO) {
+            System.out.println(exIO.getMessage());
+        } return regAnimal;
     }
 }
