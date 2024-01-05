@@ -63,8 +63,8 @@
    > В программе должен быть реализован следующий функционал:
    > 1. [Завести новое животное](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/serviсe/AddAnimal.java)
    > 2. [Определять животное в правильный класс](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/constructor/AnimalConstructor.java)
-   > 3. [Увидеть список команд, которое выполняет животное](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/service/AnimalEditor.java)
-   > 4. [Обучить животное новым командам](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/service/AnimalEditor.java)
+   > 3. [Увидеть список команд, которое выполняет животное](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/service)
+   > 4. [Обучить животное новым командам](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/service)
    > 5. [Реализовать навигацию по меню](https://github.com/OlegShuliak/ShuliakOleg_FinalControlWork/raw/main/src/Program.java)
 
 
