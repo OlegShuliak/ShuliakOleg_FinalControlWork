@@ -1,4 +1,6 @@
 
+import model.HumanFriend;
+import model.Type;
 import registry.Registry;
 import serviсe.AddAnimal;
 import serviсe.AnimalEditor;
@@ -14,7 +16,8 @@ public class Program {
     public static void main(String[] args) {
         boolean f = true;
 
-        Registry animalBase = new Registry(new HashMap<>());
+        Registry packAnimalBase = new Registry(new HashMap<>());
+        Registry petBase = new Registry(new HashMap<>());
         RegEditor regEditor = new RegEditor();
         AnimalEditor animalEditor = new AnimalEditor();
 
@@ -31,27 +34,44 @@ public class Program {
                 int operation = Integer.parseInt(scanner.nextLine());
 
                 switch (operation) {
-                    case 1:
-                        regEditor.writeAnimal(animalEditor.animalInfArr(new AddAnimal().newAnimal()), animalBase);
-                        break;
-                    case 2:
-                        regEditor.showAnimalReg(animalBase);
-                        break;
-                    case 3:
-                        regEditor.delAnimal(animalBase);
-                        break;
-                    case 4:
-                        animalEditor.animalTrain(regEditor.setAnimal(animalBase));
-                        break;
-                    case 5:
-                        animalEditor.viewSkill(regEditor.setAnimal(animalBase));
-                        break;
-                    case 0:
-                        f = false;
-                        break;
-                    default:
-                        System.out.println("Такой операции не существует. Повторите попытку ввода.");
-                        break;
+                    case 1 -> {
+                        HumanFriend animal = new AddAnimal().newAnimal();
+                        if (animal.getType() == Type.PACKANIMAL) {
+                            regEditor.writeAnimal(animalEditor.animalInfArr(animal), packAnimalBase);
+                        } else {
+                            regEditor.writeAnimal(animalEditor.animalInfArr(animal), petBase);
+                        }
+                    }
+                    case 2 -> {
+                        if (regEditor.chooseType() == Type.PACKANIMAL) {
+                            regEditor.showAnimalReg(packAnimalBase);
+                        } else {
+                            regEditor.showAnimalReg(petBase);
+                        }
+                    }
+                    case 3 -> {
+                        if (regEditor.chooseType() == Type.PACKANIMAL) {
+                            regEditor.delAnimal(packAnimalBase);
+                        } else {
+                            regEditor.delAnimal(petBase);
+                        }
+                    }
+                    case 4 -> {
+                        if (regEditor.chooseType() == Type.PACKANIMAL) {
+                            animalEditor.animalTrain(regEditor.setAnimal(packAnimalBase));
+                        } else {
+                            animalEditor.animalTrain(regEditor.setAnimal(petBase));
+                        }
+                    }
+                    case 5 -> {
+                        if (regEditor.chooseType() == Type.PACKANIMAL) {
+                            animalEditor.viewSkill(regEditor.setAnimal(packAnimalBase));
+                        } else {
+                            animalEditor.viewSkill(regEditor.setAnimal(petBase));
+                        }
+                    }
+                    case 0 -> f = false;
+                    default -> System.out.println("Такой операции не существует. Повторите попытку ввода.");
                 }
             } catch (NumberFormatException exception) {
                 System.out.println("Неверный формат ввода, повторите попытку.");
