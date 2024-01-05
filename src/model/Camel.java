@@ -3,6 +3,7 @@ package model;
 
 import constructor.PackAnimalKind;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Camel extends HumanFriend {
@@ -15,6 +16,6 @@ public class Camel extends HumanFriend {
 
     @Override
     public String toString() {
-        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Вьючное животное", "Хомяк", getName(), getSkill(), getDateOfBirth());
+        return String.format("%s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Вьючное животное", "Верблюд", getName(), getSkill(),  df.format(getDateOfBirth()));
     }
 }

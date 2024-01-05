@@ -63,4 +63,16 @@ public class RegEditor {
         int id = new Random().nextInt(1000, 10000);
         return id;
     }
+
+    public void showAnimalReg(Registry regAnimal){
+        int counter = 0;
+        if (regAnimal.getAnimalHashMap().isEmpty()){
+            System.out.println("Животные отсутствуют в данном списке.");
+        } else {
+            for (var animal : regAnimal.getAnimalHashMap().entrySet()) {
+                System.out.printf("ID = %d: %s", animal.getKey(), new AnimalEditor().animalFromArr(animal.getValue()));
+            }
+        }
+
+    }
 }

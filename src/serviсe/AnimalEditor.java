@@ -12,7 +12,7 @@ public class AnimalEditor {
 
     private Scanner scanner = new Scanner(System.in);
 
-    public ArrayList AnimalInfArr(HumanFriend humanFriend) {
+    public ArrayList animalInfArr(HumanFriend humanFriend) {
         ArrayList animalInf = new ArrayList<>(5);
         animalInf.add(0, humanFriend.getType());
         animalInf.add(1, humanFriend.getKind());
@@ -22,24 +22,24 @@ public class AnimalEditor {
         return animalInf;
     }
 
-    public HumanFriend AnimalFromArr(ArrayList animalInfArr) {
+    public HumanFriend animalFromArr(ArrayList animalInfArr) {
         HumanFriend animal = new AnimalConstructor().createNewAnimal((AnimalKind) animalInfArr.get(1), (String) animalInfArr.get(2), (String) animalInfArr.get(3), (Date) animalInfArr.get(4));
         return animal;
     }
 
-    public void AnimalTrain(ArrayList animalInfArr) {
+    public void animalTrain(ArrayList animalInfArr) {
         String animalSkill = (String) animalInfArr.get(3);
         StringBuilder sb = new StringBuilder(animalSkill);
         do {
             System.out.println("Введите новую команду для животного: ");
             String newSkill = scanner.nextLine();
-            sb.append(", " + newSkill);
+            sb.append("; " + newSkill);
             break;
         } while (true);
         animalInfArr.set(3, sb.toString());
     }
 
-    public void ViewSkill(ArrayList animalInfArr) {
+    public void viewSkill(ArrayList animalInfArr) {
         System.out.printf("Команды животного: %S. \n", animalInfArr.get(3));
     }
 }

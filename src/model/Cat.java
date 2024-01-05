@@ -15,6 +15,6 @@ public class Cat extends HumanFriend {
 
     @Override
     public String toString() {
-        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Домашнее животное", "Кот", getName(), getSkill(), getDateOfBirth());
+        return String.format("%s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Домашнее животное", "Кот", getName(), getSkill(), df.format(getDateOfBirth()));
     }
 }

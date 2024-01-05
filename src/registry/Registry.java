@@ -23,10 +23,9 @@ public class Registry {
         this.animalHashMap = animalHashMap;
     }
 
+
     @Override
     public String toString() {
-        return "Registry{" +
-                "animalHashMap=" + animalHashMap +
-                '}';
+        return animalHashMap.toString();
     }
 }

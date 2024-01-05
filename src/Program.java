@@ -32,19 +32,19 @@ public class Program {
 
                 switch (operation) {
                     case 1:
-                        regEditor.writeAnimal(animalEditor.AnimalInfArr(new AddAnimal().newAnimal()), animalBase);
+                        regEditor.writeAnimal(animalEditor.animalInfArr(new AddAnimal().newAnimal()), animalBase);
                         break;
                     case 2:
-                        System.out.println(animalBase.toString());
+                        regEditor.showAnimalReg(animalBase);
                         break;
                     case 3:
                         regEditor.delAnimal(animalBase);
                         break;
                     case 4:
-                        animalEditor.AnimalTrain(regEditor.setAnimal(animalBase));
+                        animalEditor.animalTrain(regEditor.setAnimal(animalBase));
                         break;
                     case 5:
-                        animalEditor.ViewSkill(regEditor.setAnimal(animalBase));
+                        animalEditor.viewSkill(regEditor.setAnimal(animalBase));
                         break;
                     case 0:
                         f = false;

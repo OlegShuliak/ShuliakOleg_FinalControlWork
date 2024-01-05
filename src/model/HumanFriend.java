@@ -13,6 +13,8 @@ public abstract class HumanFriend {
     private String skill;
     private Date dateOfBirth;
 
+    protected SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+
     public HumanFriend(String name, String skill, Date dateOfBirth) {
         this.name = name;
         this.skill = skill;
@@ -58,8 +60,5 @@ public abstract class HumanFriend {
     public void setKind(AnimalKind kind) {
         this.kind = kind;
     }
-
-
-
 
 }

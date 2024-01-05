@@ -15,6 +15,6 @@ public class Horse extends HumanFriend {
 
     @Override
     public String toString() {
-        return String.format("Животное: %s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Вьючное животное", "Лошадь", getName(), getSkill(), getDateOfBirth());
+        return String.format("%s, %s. Кличка: %s. Навыки: %s. Дата рождения: %s. \n", "Вьючное животное", "Лошадь", getName(), getSkill(), df.format(getDateOfBirth()));
     }
 }
