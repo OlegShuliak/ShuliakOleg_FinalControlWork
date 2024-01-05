@@ -1,11 +1,7 @@
 package registry;
 
-import netscape.javascript.JSException;
-import netscape.javascript.JSObject;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class Registry {
 
@@ -18,7 +14,7 @@ public class Registry {
         this.animalHashMap = animalHashMap;
     }
 
-    public HashMap <Integer, ArrayList> getAnimalHashMap() {
+    public HashMap<Integer, ArrayList> getAnimalHashMap() {
         return animalHashMap;
     }
 

@@ -1,6 +1,5 @@
 package model;
 
-import constructor.PackAnimalKind;
 import constructor.PetKind;
 
 import java.util.Date;

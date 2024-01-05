@@ -22,7 +22,7 @@ public class AnimalConstructor implements Creator {
             } else if (kind == PackAnimalKind.CAMEL) {
                 return new Camel(name, skill, dateOfBirth);
             } else throw new NonExistKind(kind);
-        } catch (NonExistKind nonExistKind){
+        } catch (NonExistKind nonExistKind) {
 
         }
         return null;

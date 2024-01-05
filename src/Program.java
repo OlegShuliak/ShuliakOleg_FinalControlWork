@@ -6,8 +6,6 @@ import serviсe.AddAnimal;
 import serviсe.AnimalEditor;
 import serviсe.RegEditor;
 
-import java.io.IOException;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Program {
@@ -21,8 +19,6 @@ public class Program {
 
         Registry petBase = regEditor.loadReg(Type.PET);
         Registry packAnimalBase = regEditor.loadReg(Type.PACKANIMAL);
-//        Registry packAnimalBase = new Registry(new HashMap<>());
-//        Registry petBase = new Registry(new HashMap<>());
 
         while (f) {
             System.out.println("Введите номер операции для работы со справочником:");

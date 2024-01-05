@@ -1,8 +1,6 @@
 package serviсe;
 
-import model.HumanFriend;
 import model.Type;
-import netscape.javascript.JSObject;
 import registry.Registry;
 
 import java.io.*;
@@ -132,6 +130,7 @@ public class RegEditor {
             System.out.println("Отсутствует файл реестра.");
         } catch (IOException exIO) {
             System.out.println(exIO.getMessage());
-        } return regAnimal;
+        }
+        return regAnimal;
     }
 }

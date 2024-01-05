@@ -8,10 +8,9 @@ import model.HumanFriend;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.Locale;
-import java.util.Scanner;
 
 public class LoadAnimal {
 
@@ -19,7 +18,8 @@ public class LoadAnimal {
     private String name;
     private String skill;
     private Date dateOfBirth;
-    public HumanFriend strToAnimal(String kind, String name, String skill, String  birth) {
+
+    public HumanFriend strToAnimal(String kind, String name, String skill, String birth) {
         return new AnimalConstructor().createNewAnimal(setKind(kind), setName(name), setSkill(skill), setDateOfBirth(birth));
     }
 
