@@ -122,7 +122,6 @@ public class RegEditor {
             String str;
             while ((str = br.readLine()) != null) {
                 ArrayList<String> list = new ArrayList<>(List.of(str.split(",")));
-                System.out.println(list);
                 regAnimal.getAnimalHashMap().put(Integer.parseInt(list.get(0)), animalEditor.animalInfArr(loadAnimal.strToAnimal(list.get(2).trim(), list.get(3).trim(), list.get(4).trim(), list.get(5).trim())));
             }
             br.close();
