@@ -1,2 +1,2 @@
-4947, PACKANIMAL, DONKEY, Мишка, Не тупи, Tue Oct 06 00:00:00 MSK 2015
-1320, PACKANIMAL, CAMEL, Артур, Дай копыто; Фас, Sat Mar 03 00:00:00 MSK 2018
+4947, PACKANIMAL, DONKEY, Мишка, Не тупи, Tue Nov 03 00:00:00 MSK 2015
+1320, PACKANIMAL, CAMEL, Артур, Дай копыто; Фас, Sat Mar 17 00:00:00 MSK 2018
